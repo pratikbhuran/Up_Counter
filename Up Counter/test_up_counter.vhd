@@ -27,8 +27,8 @@ COMPONENT Up_counter IS
 GENERIC( g_COUNT_BITS	:INTEGER  := 8						-- change the number of bits for up counter
 	);
 
-PORT(clk		:IN STD_LOGIC;						-- clock input
-	rst			:IN STD_LOGIC;						-- reset bit 
+PORT(	clk		:IN STD_LOGIC;						-- clock input
+	rst		:IN STD_LOGIC;						-- reset bit 
 	Count_o		:OUT STD_LOGIC_VECTOR(g_COUNT_BITS - 1 DOWNTO 0)	-- counter output
 	);
 	
@@ -82,25 +82,5 @@ stim_proc:PROCESS					-- Stimulus process, applies stimulus to input ports of UU
 
 
 END Test;
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		
 	
 		
